@@ -64,3 +64,7 @@ In this section, the minimum information display is:
 
 - Optimize the display of the list and your components.
 - Set up a client cache for the HTTP request with react-query.
+
+# Results
+
+To send the results, please push on a public repository and send the link to the following email address: benjamin.boulin@syncremote.co
