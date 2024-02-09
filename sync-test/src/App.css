@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+:root {
+    --Main: #dde9a3;
+    --Main2: #738801;
+    --Main3: #ffebb2;
+    --Main4: #e0d9fa;
+    --Main5: #efefef;
+    --Main6: #e0eba5;
+    --Color: #1c1c1c;
+    --Color2: #e7f2ac;
+    --Color3: #ffba00;
+    --Color4: #8b81b3;
+    --Color5: gray;
+    --BodyBackground: #fefcfc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+    background-color: var(--BodyBackground);
+    color: var(--Color);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    padding-top: 20px;
+    align-items: center;
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-list {
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 20rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+h1 {
+    color: var(--Main2);
+}
+
+a {
+    color: var(--Color4);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--Color3);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--Main5);
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: var(--Main3);
+}
+
+.page-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.user-details {
+    background-color: var(--Main4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.details {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  position: relative;
+  background-color: var(--Main4);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 130px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card h1 {
+  color: var(--Main2);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.goBackBtn {
+  display: inline-block;
+  background-color: var(--Main2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.goBackBtn:hover {
+  background-color: #7488019f; 
 }
